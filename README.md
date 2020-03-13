@@ -25,8 +25,8 @@ Once the datasets were ready we began fitting different classification models to
 For the purpose of this project we decided to use only the teams and players that were involved in the 2014 world cup, both to improve accuracy of the model eliminating the possibility of outliers as well as the computational efficiency of the model and simulations.
 
 The datasets used:
-  - [FIFA 14 Player Ratings](#./datasets/players_18.csv)
-  - [World Cup Matches](#./datasets/WorldCupMatches.csv)
+  - [FIFA 14 Player Ratings](https://www.kaggle.com/stefanoleone992/fifa-20-complete-player-dataset)
+  - [World Cup Matches](https://www.kaggle.com/abecklas/fifa-world-cup)
 
 
 ## Conclusion and Recommendations
