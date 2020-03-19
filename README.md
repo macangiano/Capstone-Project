@@ -25,8 +25,8 @@ Once the datasets were ready we began fitting different classification models to
 For the purpose of this project we decided to use only the teams and players that were involved in the 2014 world cup, both to improve accuracy of the model eliminating the possibility of outliers as well as the computational efficiency of the model and simulations.
 
 The datasets used:
-  - [FIFA 14 Player Ratings](#./datasets/players_18.csv)
-  - [World Cup Matches](#./datasets/WorldCupMatches.csv)
+  - [FIFA 14 Player Ratings](https://www.kaggle.com/stefanoleone992/fifa-20-complete-player-dataset)
+  - [World Cup Matches](https://www.kaggle.com/abecklas/fifa-world-cup)
 
 
 ## Conclusion and Recommendations
@@ -34,4 +34,11 @@ The datasets used:
 The model is able to predict with 61% accuracy which team will win. The model which worked best according to the accuracy score was the Voting Classifier. The simulating of the individual games sometimes seems more accurate using different classifier models on the simulation functions. However, the overall outcome of the group is best predicted by the Voting Classifier which uses a tuned Extra Trees model. There are many considerations to make when trying to predict the future as there is always a level of uncertainty present. This particular group in the 2014 World Cup was a prime example of this as the world watched Costa Rica put on a performance of a life time causing huge upsets and ultimately winning the group. The best we can do is use this data to identify what makes a winning team by looking at the coefficients of the model. This information could be of great use to international teams looking for areas in need of improvement. Ultimately my goal was to predict whether or not Italy would pass the group stages. According to my model Italy should have passed easily winning two out of the three games. However, this proved to be Costa Rica's year and the Italian nationals ended up going home.
 
 The model can be improved in the future by giving it more data on each team. This became evident when we found leakage due to the 'score' column in our dataset. The model was able to take this information and correctly predict the outcome every time. What can be done to include the goal scoring factor into the model would be to calculate the probability of a given team to score against another. This way our features would be able to take into consideration the goal scoring ability of each squad without having it directly inform the model on who the winner is. Furthermore, for the feasibility of this project we only ran my model on games that included teams from the 2014 World Cup. A next step would be to include all matches as the model would have more data to work with. Since the model examines the relationships between the team’s average statistics rather than the team names, it would not have an impact on the outcome.
+
+## References
+
+  - https://www.kaggle.com/stefanoleone992/fifa-20-complete-player-dataset
+  - https://www.kaggle.com/abecklas/fifa-world-cup
+  - https://towardsdatascience.com/using-machine-learning-to-simulate-world-cup-matches-959e24d0731
+  - https://github.com/mwaskom/seaborn/issues/1582
 
